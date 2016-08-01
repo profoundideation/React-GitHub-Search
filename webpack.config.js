@@ -6,11 +6,13 @@ module.exports = {
       path: __dirname,
       filename: 'app/js/main.js'
     },
-    module: [
-      {
-        test: /\jsx?$/,
-        loader: 'babel',
-        exclude: /node_modules/
-      }
-    ]
+    module: {
+		loaders: [
+			{
+				test: /\.jsx?$/,
+				loader: 'babel',
+				exclude: /node_modules/
+			}
+		]
+	}
 };
