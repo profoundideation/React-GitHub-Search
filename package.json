@@ -24,7 +24,8 @@
   "devDependencies": {
     "babel-core": "*",
     "babel-loader": "*",
-    "webpack": "*"
+    "webpack": "*",
+    "webpack-dev-server": "^1.14.1"
   },
   "Dependencies": {
     "react": "*",
