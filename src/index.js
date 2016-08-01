@@ -4,6 +4,6 @@ import App from './components/App.jsx';
 
 // alert('It Works!');
 ReactDOM.render(
-  <App />, d
+  <App />, 
   document.getElementById('app')
 );
