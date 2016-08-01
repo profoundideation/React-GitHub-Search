@@ -1,0 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App.jsx';
+
+// alert('It Works!');
+ReactDOM.render(
+  <App />, d
+  document.getElementById('app')
+);
