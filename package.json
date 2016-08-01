@@ -12,17 +12,24 @@
   },
   "keywords": [
     "Daniel",
-    "Daniel",
-    "Lim",
-    "Profound",
-    "Ideation",
-    "Inc.",
+    "Daniel Lim",
+    "Profound Ideation Inc.",
     "ReactJS",
     "React",
+    "React JS",
     "GitHub"
   ],
   "author": "Daniel Lim",
   "license": "ISC",
+  "devDependencies": {
+    "babel-core": "5.8.*",
+    "babel-loader": "5.3.*",
+    "webpack": "1.12.*"
+  },
+  "Dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
   "bugs": {
     "url": "https://github.com/profoundideation/React-GitHub-Search/issues"
   },
