@@ -1,0 +1,30 @@
+{
+  "name": "react-github-searcher",
+  "version": "1.0.0",
+  "description": "Search GitHub via ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profoundideation/React-GitHub-Search.git"
+  },
+  "keywords": [
+    "Daniel",
+    "Daniel",
+    "Lim",
+    "Profound",
+    "Ideation",
+    "Inc.",
+    "ReactJS",
+    "React",
+    "GitHub"
+  ],
+  "author": "Daniel Lim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profoundideation/React-GitHub-Search/issues"
+  },
+  "homepage": "https://github.com/profoundideation/React-GitHub-Search#readme"
+}
