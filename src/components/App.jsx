@@ -13,6 +13,27 @@ class App extends Component {
     }
   }
 
+  // Let's Get the User Data from GitHub
+  getUserData() {
+    $.ajax({
+      url: 'https://api.github.com/users/'+this.state.userName+'?client_id='+this.state.clientId+'&client_secret='+this.state.clientSecret,
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        console.log(data);              
+      }.bind(this),
+      error: function(xhr, status, err) {
+        alert(err);        
+      }.bind(this)
+    });
+  }
+
+// 'https://api.github.com/users/' + this.username + '/repos',
+
+  componentDidMount() { 
+    this.getUserData();
+  }
+  
   render() {
     return (
       <div>
@@ -21,6 +42,9 @@ class App extends Component {
     )
   }
 }
+
+
+
 
 App.propTypes = {
   clientId: React.PropTypes.string,
