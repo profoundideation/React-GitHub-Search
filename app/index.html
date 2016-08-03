@@ -11,6 +11,7 @@
    <!-- <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+   <link rel="stylesheet" href="css/animate.css">
 
   </head>
   <body>
@@ -51,5 +52,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
+  <script>
+      $(".list-group-item").hover(function(){
+          $(this).addClass('animated ' + $(this).data('action'));
+      });
+      $(".list-group-item").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",function(){
+          $(this).removeClass('animated ' + $(this).data('action'));
+      });
+  </script>
+
   </body>
 </html>
