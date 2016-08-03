@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import RepoList from './RepoList.jsx';
+
 
 class Profile extends Component {  
   render() {
@@ -13,7 +14,7 @@ class Profile extends Component {
             <div className="panel-body">
                 <div className="row">
                     <div className="col-md-4">
-                        <img className="profile-img img-thumbnail" src={this.props.userData.avatar_url} style={{width:"50%"}} />
+                        <img className="profile-img img-thumbnail" src={this.props.userData.avatar_url} style={{width:"100%"}} />
                         <a className="btn btn-default btn-block" href={this.props.userData.html_url} target="_blank">View Profile</a>
                     </div>
                     <div className="col-md-8">
@@ -32,8 +33,17 @@ class Profile extends Component {
                         </ul>
                     </div>                    
                 </div>
+                <br />
+                <a></a>
             </div>
         </div>
+
+        <hr />
+
+        <h3>User Repos</h3>
+
+        <RepoList userRepos = {this.props.userRepos} />
+
         <div className="panel panel-default">
             <div className="panel-heading">
                 <h3 className="panel-title">{this.props.userData.name}</h3>
@@ -57,6 +67,7 @@ class Profile extends Component {
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>                
     )
