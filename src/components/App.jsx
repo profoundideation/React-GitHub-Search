@@ -33,7 +33,7 @@ class App extends Component {
   // Let's Get the User's Repo Data from GitHub
   getUserRepos() {
     $.ajax({
-      url: 'https://api.github.com/users/'+this.state.userName+'/repos?per_page='+this.state.perPage+'client_id='+this.state.clientId+'&client_secret='+this.state.clientSecret+'&sort=created',
+      url: 'https://api.github.com/users/'+this.state.userName+'/repos?per_page='+this.state.perPage+'&client_id='+this.state.clientId+'&client_secret='+this.state.clientSecret+'&sort=created',
       dataType: 'json',
       cache: false,
       success: function(data) {
