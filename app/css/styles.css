@@ -26,3 +26,22 @@ h1 {
     height: 450px;
     background-color: #3399FF;
 }
+
+.buttons-spacing {    
+  margin: 10px;
+}
+
+.buttons-spacing1 {    
+  margin: 10px 10px 10px 0px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+}
+
+.profilePix {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
