@@ -13,16 +13,16 @@ class Repo extends Component {
                 <div className="row">
                     <div className="col-md-12">
 
-                <div className="row">
-                    <div className="col-md-9">                                    
-                        <h4><a href="{repo.html_url}" target="_blank">{repo.name}</a></h4> 
-                        <p>{repo.description}</p>                        
-                    </div>
-                    <div className="col-md-3">
-                        <span className="label label-primary buttons-spacing"> Watchers</span>
-                        <span className="label label-success buttons-spacing"> Forks</span>
-                    </div>
-                </div>
+                        <div className="row">
+                            <div className="col-md-9">                                    
+                                <h4><a href="{repo.html_url}" target="_blank">{repo.name}</a></h4> 
+                                <p>{repo.description}</p>                        
+                            </div>
+                            <div className="col-md-3">
+                                <span className="label label-primary buttons-spacing UserReposButtons"> Watchers</span>
+                                <span className="label label-success buttons-spacing UserReposButtons"> Forks</span>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Profile from './github/Profile.jsx';
+import Search from './github/Search.jsx';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userName: 'profoundhub',      
+      userName: 'profoundhub', //profoundhub      
       userData: [],
       userRepos: [],
       perPage: 10
@@ -20,8 +21,7 @@ class App extends Component {
       dataType: 'json',
       cache: false,
       success: function(data) {
-        this.setState({userData: data});
-        console.log(data);              
+        this.setState({userData: data});        
       }.bind(this),
       error: function(xhr, status, err) {
         this.setState({userName: null});
@@ -46,7 +46,13 @@ class App extends Component {
     });
   }
 
-  // 'https://api.github.com/users/' + this.username + '/repos',
+  handleFormSubmit(userName) {
+    // alert(userName);
+    this.setState({userName: userName}, function(){
+        this.getUserData();
+        this.getUserRepos();
+    })
+  }
 
   componentDidMount() { 
     this.getUserData();
@@ -56,6 +62,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Search onFormSubmit = {this.handleFormSubmit.bind(this)} />
         <Profile {...this.state} />
       </div>
     )

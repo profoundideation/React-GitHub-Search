@@ -45,3 +45,12 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+.UserReposButtons {
+  float: right;
+}
+
+.list-group-item:hover {
+    -webkit-animation: shake 1s;
+    animation: shake 1s;
+}
