@@ -13,7 +13,7 @@ class Profile extends Component {
             <div className="panel-body">
                 <div className="row">
                     <div className="col-md-4">
-                        <img className="profile-img img-thumbnail" src={this.props.userData.avatar_url} />
+                        <img className="profile-img img-thumbnail" src={this.props.userData.avatar_url} style={{width:"50%"}} />
                         <a className="btn btn-default btn-block" href={this.props.userData.html_url} target="_blank">View Profile</a>
                     </div>
                     <div className="col-md-8">
