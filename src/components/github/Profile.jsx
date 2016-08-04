@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import RepoList from './RepoList.jsx';
 
 
-class Profile extends Component {  
+class Profile extends Component {
   render() {
     return (
         // Profile: {this.props.userData.name}
@@ -21,11 +21,11 @@ class Profile extends Component {
                             <span className="label label-primary buttons-spacing1">{this.props.userData.public_repos} Public Repos</span>
                             <span className="label label-success buttons-spacing">{this.props.userData.public_gists} Public Gists</span>
                             <span className="label label-info buttons-spacing">{this.props.userData.followers} Followers</span>
-                            <span className="label label-warning buttons-spacing">{this.props.userData.following} Following</span>                            
+                            <span className="label label-warning buttons-spacing">{this.props.userData.following} Following</span>
                         </div>
                     </div>
                     <div className="col-md-8">
-                        
+
                         <ul className="list-group">
                             <li className="list-group-item"><strong>Username: </strong> {this.props.userData.login}</li>
                             <li className="list-group-item"><strong>Location: </strong> {this.props.userData.location}</li>
@@ -33,7 +33,7 @@ class Profile extends Component {
                             <li className="list-group-item"><strong>Blog: </strong> {this.props.userData.blog}</li>
                             <li className="list-group-item"><strong>Member Since: </strong> {this.props.userData.created_at}</li>
                         </ul>
-                    </div>                    
+                    </div>
                 </div>
                 <br />
                 <a></a>
@@ -46,14 +46,14 @@ class Profile extends Component {
 
         <RepoList userRepos = {this.props.userRepos} />
 
-    </div>                
+    </div>
     )
   }
 
 }
 
 Profile.propTypes = {
-  name: React.PropTypes.string  
+  name: React.PropTypes.string
 };
 
 export default Profile
