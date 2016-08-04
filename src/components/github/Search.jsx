@@ -4,7 +4,6 @@ class Search extends Component {
   onSubmit(e) {
       e.preventDefault();
       let userName = this.refs.userName.value.trim();
-
       if(!userName) {
           alert('Please Enter a Valid UserName');
           return;
@@ -20,7 +19,6 @@ class Search extends Component {
                     <div className="form-group">
                         <label className="quickLabelAlign">Search GitHub Users:</label>
                         <input type="text" ref="userName" placeholder="Type to begin searching &hellip;" className="form-control mainSearch" />
-
                     </div>
                 </form>
             </div>
