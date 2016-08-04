@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Profile from './github/Profile.jsx';
 import Search from './github/Search.jsx';
+import Footer from './github/Footer.jsx';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userName: 'github', //profoundhub
+      userName: 'github', // profoundhub
       userData: [],
       userRepos: [],
       perPage: 10
@@ -64,6 +65,7 @@ class App extends Component {
       <div>
         <Search onFormSubmit = {this.handleFormSubmit.bind(this)} />
         <Profile {...this.state} />
+        <Footer />
       </div>
     )
   }

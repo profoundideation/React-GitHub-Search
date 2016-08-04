@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import RepoList from './RepoList.jsx';
 
-
 class Profile extends Component {
   render() {
     return (
@@ -16,7 +15,6 @@ class Profile extends Component {
                     <div className="col-md-4">
                         <img className="profile-img img-thumbnail profilePix" src={this.props.userData.avatar_url} style={{width:"100%"}} />
                         <a className="btn btn-default btn-block" href={this.props.userData.html_url} target="_blank">View Profile</a>
-
                         <div className="stats">
                             <span className="label label-primary buttons-spacing1">{this.props.userData.public_repos} Public Repos</span>
                             <span className="label label-success buttons-spacing">{this.props.userData.public_gists} Public Gists</span>
@@ -25,7 +23,6 @@ class Profile extends Component {
                         </div>
                     </div>
                     <div className="col-md-8">
-
                         <ul className="list-group">
                             <li className="list-group-item"><strong>Username: </strong> {this.props.userData.login}</li>
                             <li className="list-group-item"><strong>Location: </strong> {this.props.userData.location}</li>
@@ -39,17 +36,12 @@ class Profile extends Component {
                 <a></a>
             </div>
         </div>
-
-        <hr />
-
+          <hr />
         <h3>User Repos</h3>
-
         <RepoList userRepos = {this.props.userRepos} />
-
     </div>
     )
   }
-
 }
 
 Profile.propTypes = {
