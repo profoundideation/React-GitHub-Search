@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userName: 'profoundhub', //profoundhub      
+      userName: 'github', //profoundhub
       userData: [],
       userRepos: [],
       perPage: 10
@@ -21,11 +21,11 @@ class App extends Component {
       dataType: 'json',
       cache: false,
       success: function(data) {
-        this.setState({userData: data});        
+        this.setState({userData: data});
       }.bind(this),
       error: function(xhr, status, err) {
         this.setState({userName: null});
-        alert(err);        
+        alert(err);
       }.bind(this)
     });
   }
@@ -37,11 +37,11 @@ class App extends Component {
       dataType: 'json',
       cache: false,
       success: function(data) {
-        this.setState({userRepos: data});                
+        this.setState({userRepos: data});
       }.bind(this),
       error: function(xhr, status, err) {
         this.setState({userName: null});
-        alert(err);        
+        alert(err);
       }.bind(this)
     });
   }
@@ -54,11 +54,11 @@ class App extends Component {
     })
   }
 
-  componentDidMount() { 
+  componentDidMount() {
     this.getUserData();
     this.getUserRepos();
   }
-  
+
   render() {
     return (
       <div>
@@ -68,9 +68,6 @@ class App extends Component {
     )
   }
 }
-
-
-
 
 App.propTypes = {
   clientId: React.PropTypes.string,
