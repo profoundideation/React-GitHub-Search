@@ -1,4 +1,7 @@
-import React, {Component} from 'react'; import RepoList from './RepoList.jsx'; class Profile extends Component { render() { return ( // Profile: {this.props.userData.name}
+import React, {Component} from 'react';
+import RepoList from './RepoList.jsx';
+
+class Profile extends Component { render() { return (
 <div>
   <div className="panel panel-default">
     <div className="panel-heading">
@@ -34,4 +37,8 @@ import React, {Component} from 'react'; import RepoList from './RepoList.jsx'; c
   <h3>User Repos</h3>
   <RepoList userRepos={ this.props.userRepos} />
 </div>
-) } } Profile.propTypes = { name: React.PropTypes.string }; export default Profile
+) } }
+
+Profile.propTypes = { name: React.PropTypes.string };
+
+export default Profile
