@@ -5,11 +5,9 @@ class Repo extends Component {
     const {repo} = this.props;
     return (
         <div>
-
             <li className="list-group-item">
                 <div className="row">
                     <div className="col-md-12">
-
                         <div className="row">
                             <div className="col-md-9">
                                 <h4><a href="{repo.html_url}" target="_blank">{repo.name}</a></h4>

@@ -77,7 +77,7 @@ App.propTypes = {
 };
 
 App.defaultProps = {
-  client: '0a59ddc213a95ee9adb6',
+  clientId: '0a59ddc213a95ee9adb6',
   clientSecret: '655a3af9c98d47e2e7e5c1b6aeed2ad696104c0a'
 }
 
