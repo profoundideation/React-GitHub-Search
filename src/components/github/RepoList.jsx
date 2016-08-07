@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Repo from './Repo.jsx';
 
 class RepoList extends Component {  
-
   render() {
     return (
         <div>
@@ -11,13 +10,11 @@ class RepoList extends Component {
                     this.props.userRepos.map(repo => {
                         return <Repo repo = {repo} key = {repo.id} {...this.props} />
                     })
-                }                
+                }
             </ul>
-        </div>                
+        </div>
     )
   }
-
 }
-
 
 export default RepoList
