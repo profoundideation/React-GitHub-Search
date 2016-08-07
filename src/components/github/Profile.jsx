@@ -21,7 +21,7 @@ class Profile extends Component { render() { return (
         </div>
         <div className="col-md-8">
           <ul className="list-group">
-            <li className="list-group-item"><strong>Username: </strong> {this.props.userData.login}</li>
+            <li className="list-group-item"><strong>UserName: </strong> {this.props.userData.login}</li>
             <li className="list-group-item"><strong>Location: </strong> {this.props.userData.location}</li>
             <li className="list-group-item"><strong>Email: </strong> {this.props.userData.email}</li>
             <li className="list-group-item"><strong>Blog: </strong> {this.props.userData.blog}</li>
@@ -30,7 +30,6 @@ class Profile extends Component { render() { return (
         </div>
       </div>
       <br />
-      <a></a>
     </div>
   </div>
   <hr />
